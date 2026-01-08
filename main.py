@@ -2,6 +2,7 @@
 import numpy as np
 import cv2
 
+# Enlarge Image
 def enlarge_with_edges(img, edge_map, new_h,new_w):
     
     edges_large = cv2.resize(edge_map, (new_w, new_h), interpolation=cv2.INTER_NEAREST)
